@@ -1,0 +1,26 @@
+{
+  "name": "kafka-plugin",
+  "version": "1.0.0",
+  "description": "Sends events to a Kafka topic on ingestion.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PostHog/kafka-plugin.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PostHog/kafka-plugin/issues"
+  },
+  "homepage": "https://github.com/PostHog/kafka-plugin#readme",
+  "dependencies": {
+    "@posthog/plugin-scaffold": "^0.12.10",
+    "kafkajs": "^1.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.19"
+  }
+}

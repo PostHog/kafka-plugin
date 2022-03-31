@@ -1,0 +1,58 @@
+{
+  "name": "Kafka Plugin",
+  "url": "https://github.com/PostHog/kafka-plugin",
+  "description": "Sends events to a Kafka topic on ingestion.",
+  "main": "index.ts",
+  "posthogVersion": ">= 1.32.0",
+  "config": [
+    {
+      "key": "kafkaSslCert",
+      "name": "Kafka ssl cert (base64)",
+      "type": "string",
+      "required": true,
+      "secret": true
+    },
+    {
+      "key": "kafkaSslKey",
+      "name": "Kafka ssl key (base64)",
+      "type": "string",
+      "required": true,
+      "secret": true
+    },
+    {
+      "key": "kafkaSslCa",
+      "name": "Kafka ssl ca (base64)",
+      "type": "string",
+      "required": false,
+      "secret": true
+    },
+    {
+      "key": "kafkaSslRejectUnauthorized",
+      "name": "Kafka ssl reject unauthorized",
+      "type": "bool",
+      "required": false,
+      "secret": false
+    },
+    {
+      "key": "clientId",
+      "hint": "",
+      "name": "Client ID",
+      "type": "string",
+      "required": true
+    },
+    {
+      "key": "brokers",
+      "hint": "Comma separated list of host:port",
+      "name": "Brokers",
+      "type": "string",
+      "required": true
+    },
+    {
+      "key": "topic",
+      "hint": "A topic will be created if it does not exist.",
+      "name": "Topic",
+      "type": "string",
+      "required": true
+    }
+  ]
+}
